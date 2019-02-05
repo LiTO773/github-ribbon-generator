@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  margin: 0;
+}
+
+.container {
+  margin: auto;
+  padding: 10px;
+  max-width: 540px;
+  text-align: center;
+}
+
+.header {
+  border-bottom: 1px solid #DDD;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 42px;
+}
+
+.subtitle {
+  font-family: 'Roboto', sans-serif;
+  display: inline-flex;
+  margin-right: 10px;
+}
+
+.alone-option {
+  width: inherit;
+  display: flex;
+  align-content: space-between;
+  align-items: baseline;
+}
+
+.option {
+  margin: 20px 10px 0px 10px;
+  display: inline-flex;
+  align-content: space-between;
+  align-items: baseline;
+}
+
+input {
+  display: inline-flex;
+  width: inherit;
+  flex-grow: 2;
+  padding: 8px;
+  border: 1px solid #DDD;
+  border-radius: 5px;
+  max-height: 36px;
+  font-size: 15px;
+}
+
+select {
+  display: inline-flex;
+  border: 1px solid #DDD;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#code {
+  text-align: left;
+  display: flex;
+  max-width: inherit;
+  padding: 10px;
+  border-radius: 5px;
+  margin: auto;
+  background-color: #DDD;
+  white-space: pre-wrap;
+  overflow: hidden;
+}
+
+.background-selector {
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+#white {
+  background: #fff;
+  border: 2px solid #23272a;
+}
+
+#dark {
+  background: #23272a;
+  border: 2px solid #fff;
+}

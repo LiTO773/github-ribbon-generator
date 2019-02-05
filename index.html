@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Github Ribbon Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+  <div id="ribbon"></div>
+  <div class="container">
+    <div class="header">
+      <h1 class="text title">Github Ribbon Generator</h1>
+      <div>
+        <div class="background-selector" id="white" onclick="changeBackground('#fff')"></div>
+        <div class="background-selector" id="dark" onclick="changeBackground('#23272a')"></div>
+      </div>
+    </div>
+    <div class="alone-option" name="url">
+      <h3 class="text subtitle">Repo URL</h3>
+      <input id="url" placeholder="https://github.com/LiTO773/github-ribbon-generator" oninput="changeRibbon()"/>
+    </div>
+    <div class="option" name="style">
+      <h3 class="text subtitle">Style</h3>
+      <select id="style" onchange="changeColors()">
+        <option value="classic">Classic</option>
+        <option value="modern">Modern</option>
+      </select>
+    </div>
+    <div class="option" name="position">
+      <h3 class="text subtitle">Position</h3>
+      <select id="position" onchange="changeRibbon()">
+        <option value="left">Left</option>
+        <option value="right">Right</option>
+      </select>
+    </div>
+    <div class="option" name="color">
+      <h3 class="text subtitle">Color</h3>
+      <select id="color" onchange="changeRibbon()">
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="darkblue">Dark Blue</option>
+        <option value="orange">Orange</option>
+        <option value="gray">Gray</option>
+        <option value="white">White</option>
+      </select>
+    </div>
+    <div class="code">
+      <h3 class="text subtitle">Code</h3>
+      <pre id="code"></pre>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
